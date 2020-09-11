@@ -4,6 +4,6 @@ COPY go.mod .
 COPY go.sum .
 RUN go mod download
 COPY . .
-RUN go build .
+RUN go build -o /go/src/app .
 EXPOSE 4040
-CMD ["server"]
+CMD ["./server"]
