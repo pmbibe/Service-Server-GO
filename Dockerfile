@@ -1,5 +1,5 @@
 FROM amd64/golang:1.14.9-alpine3.12
-WORKDIR /go/src/app
+WORKDIR /app/go-sample-app
 COPY go.mod .
 COPY go.sum .
 RUN go mod download
