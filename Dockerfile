@@ -6,4 +6,4 @@ RUN go mod download
 COPY . .
 RUN go build .
 EXPOSE 4040
-CMD ["app"]
+CMD ["server"]
